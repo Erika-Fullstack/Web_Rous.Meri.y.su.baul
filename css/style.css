@@ -1,3 +1,4 @@
+/* CABECERA */
 header {
     background-color: pink;
 }
@@ -16,7 +17,10 @@ header {
     width: 15%;
     min-height: 4rem;
 }
+/* FIN CABECERA */
 
+
+/* NAVEGACIÓN */
 .nav {
     display: flex;
     justify-content: space-around;
@@ -106,7 +110,10 @@ header {
     /* transition-delay: 500ms; */
     /* transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
+/* FIN NAVEGACIÓN */
 
+
+/* SLIDER */
 .contenedorSlides {
     position: absolute;
     z-index: 0;
@@ -119,8 +126,8 @@ header {
 [class^="slide"] {
     margin: 0%;
     padding: 0%;
-    width: 20%;
-    height: 44rem;
+    width: 25%;
+    height: 10rem;
     background-size: cover;
 }
 .slide-1 {
@@ -166,87 +173,75 @@ header {
     95% {left: -400%;}
 
     100% {left: 0%;} 
-} */
+} 
+/* FIN SLIDER */
 
-main {
-    margin-top: 40rem;
-}
 
+/* MAIN */
+
+    /* Texto bisutería */
 .bisuteria {
-    margin-top: 44rem;
+    margin-top: 10rem;
     margin-bottom: -25px;
     background-color: #E06098;
     padding: 5px;
     text-align: center;
-    font-size: 36px;
+    font-size: 26px;
     color: #f2acb3;
 }
 
-footer {
-/*     background-color: turquoise;
+
+.texto1 {
+    margin-top: 1rem;
+}
+/* FIN MAIN */
+
+/* FOOTER */
+/* footer {
+}
  */
-    background-image: url(../img/imgfooter.png);
-    height: 43rem;
+.footerImg {
+    width: 100%;
 }
-
-/* .logofooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    flex-wrap: wrap;
-    margin-left: 20rem;
-}
-
-.logofooter img {
-    width: 15%;
-    min-height: 4rem;
-} */
 
 .rrss {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: left;
 }
 
 .rrss i {
     padding: 1rem;
-    margin-top: 25rem;
-    margin-left: 20rem;
+    margin-top: -5rem;
+    margin-left: 24.5rem;
 }
 
 .linksfooter {
-    display: flex;
+    display: grid;
+    grid-template-columns: none;
+    margin-top: -3rem;
     /* justify-content: space-around; */
 }
 
 .linksfooter li {
-    width: 30%;
+    width: 20%;
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    min-height: 2.5rem;
-    font-size: large;
-    margin-top: 5rem;
+    grid-template-columns: 1rem 2fr;
+    margin-left: 5rem;
+    margin-top: -2.25rem;
+    font-size: 0.4rem;
+    line-height: 0.05rem;
 }
+/* FIN FOOTER */
 
-@media (max-width:768px) { 
+
+/* @media (max-width:768px) { 
 
     nav {
         position:relative
     }
     header {
         padding-top: 0;
-    }
-
-    .labelBurguer {
-        display: block;
-        position:fixed;
-        top: 0rem;
-        right:0rem;
-        z-index: 101; 
     }
 
     #menu {
@@ -290,13 +285,13 @@ footer {
         min-height: 5rem;
         color: #f2acb3;
     }
-/* 
+
     .menuMobile2 {
         position: relative;
         text-decoration: underline;
         color: #F2ACB3;
         min-height: 5rem;
-    } */
+    } 
     
 
     .contenedorSlides {
@@ -306,4 +301,4 @@ footer {
     main {
         margin-top: 2rem;
     }
-}
+} */
